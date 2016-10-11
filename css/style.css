@@ -1,0 +1,25 @@
+a:focus
+  {
+     background-color:black;
+     color:white;
+     border:1px red solid;
+  }
+#keyboard{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    height: 420px;
+    display:none;
+    z-index: 9999;
+    background: #e6e6fa;
+
+}
+#text{
+  width:100%;
+  height:20%;
+  font-size: 18pt;
+  position: relative;
+  border:1px solid black;
+  margin-bottom: 15px;
+  text-align: center;
+}
