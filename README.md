@@ -2,7 +2,7 @@
 virtuat Key Board with old browser compatibiliry
 
 # Howto
-Just import javascript and css files to webpage. Associate any input which needs a virtual keyboard by adding *vk* class. Example :
+Just import javascript and css files to the webpage. Associate any input which needs a virtual keyboard by adding *vk* class. Example :
 
 ```html
 <input type="text" class="vk" id="name">
