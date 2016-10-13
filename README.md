@@ -10,3 +10,4 @@ Just import javascript and css files to the webpage. Associate any input which n
 It will show it when the focus is on the input and OK/Enter key is pressed.
 
 ![demo](https://github.com/itamayo/virtuatKeyBoard/raw/master/demo/vk.png)
+[Demo Page](https://itamayo.github.io/virtuatKeyBoard/)
