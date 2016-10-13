@@ -12,6 +12,7 @@
              keyboard.style.display="block";
              document.querySelector('#vk-0-0').focus();
              elem = el;
+             document.querySelector('#vk-text').innerHTML=el.value;
            }
         });
       });
@@ -35,7 +36,7 @@
     var  line5 = document.createElement('div');
     var  line6 = document.createElement('div');
     var text  = document.createElement('div');
-    text.id = "text";
+    text.id = "vk-text";
 
     keysNums.forEach(function(k,i,length){
 
@@ -171,19 +172,19 @@
       //  evt.preventDefault();
         if (evt.keyCode == KEY_ENTER){
             if (k.innerHTML == "ENTER"){
-                elem.value = document.querySelector('#text').innerHTML;
+                elem.value = document.querySelector('#vk-text').innerHTML;
                 keyboard.style.display="none";
-                document.querySelector('#text').innerHTML= "";
+                document.querySelector('#vk-text').innerHTML= "";
                 elem.focus();
             }
             else {
                 if (k.innerHTML == "space"){
-                    document.querySelector('#text').innerHTML+=" ";
+                    document.querySelector('#vk-text').innerHTML+=" ";
                 }
                 else if (k.innerHTML == "borrar"){
-                        document.querySelector('#text').innerHTML = document.querySelector('#text').innerHTML.slice(0,-1);
+                        document.querySelector('#vk-text').innerHTML = document.querySelector('#text').innerHTML.slice(0,-1);
                     }
-                    else document.querySelector('#text').innerHTML+=k.innerHTML;
+                    else document.querySelector('#vk-text').innerHTML+=k.innerHTML;
             }
         }
         if (evt.keyCode == KEY_RIGHT){
